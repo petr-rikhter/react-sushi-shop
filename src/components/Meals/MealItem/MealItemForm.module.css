@@ -1,5 +1,9 @@
 .form {
   text-align: right;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  /* max-width: 180px; */
 }
 
 .form button {
@@ -17,4 +21,10 @@
 .form button:active {
   background-color: #47035d;
   border-color: #47035d;
+}
+
+.form p {
+  color: #b504f0;
+  font-weight: bold;
+  max-width: 180px;
 }
