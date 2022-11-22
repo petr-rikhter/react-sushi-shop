@@ -18,7 +18,7 @@ function App() {
   return (
     <CartContextProvider>
       {cartIsvisible && <Cart onHide={hideCartHandler} />}
-      <Header onShow={showCartHandler} />;
+      <Header onShow={showCartHandler} />
       <main>
         <Meals />
       </main>
