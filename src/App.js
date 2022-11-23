@@ -9,15 +9,18 @@ function App() {
 
   const showCartHandler = () => {
     setCartIsVisible(true);
+    document.body.style.overflow = "hidden";
   };
 
   const hideCartHandler = () => {
     setCartIsVisible(false);
+    document.body.style.overflow = "scroll";
   };
 
   return (
     <CartContextProvider>
       {cartIsvisible && <Cart onHide={hideCartHandler} />}
+
       <Header onShow={showCartHandler} />
       <main>
         <Meals />
