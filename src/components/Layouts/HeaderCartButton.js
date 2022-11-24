@@ -23,7 +23,7 @@ const HeaderCartButton = (props) => {
 
     const timer = setTimeout(() => {
       setButtonIsAnimated(false);
-    }, 300);
+    }, 299);
 
     return () => {
       clearTimeout(timer);
@@ -35,7 +35,7 @@ const HeaderCartButton = (props) => {
       <span className={styles.icon}>
         <CartIcon />
       </span>
-      <span>Корзина</span>
+      <span className={styles.basket}>Корзина</span>
       <span className={styles.badge}>{cartItemsNumbers}</span>
     </button>
   );
