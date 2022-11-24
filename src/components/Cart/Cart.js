@@ -45,7 +45,11 @@ const Cart = (props) => {
         <button onClick={props.onHide} className={styles["button--alt"]}>
           Закрыть
         </button>
-        {hasItems && <button className={styles.button}>Заказать</button>}
+        {hasItems && (
+          <button onClick={() => {}} className={styles.button}>
+            Заказать
+          </button>
+        )}
       </div>
     </Modal>
   );
