@@ -69,6 +69,13 @@ const cartReducer = (state, action) => {
     };
   }
 
+  if (action.type === "ORDERED") {
+    return {
+      items: [],
+      totalAmount: 0,
+    };
+  }
+
   return defaultCartState;
 };
 
@@ -92,11 +99,18 @@ const CartContextProvider = (props) => {
     });
   };
 
+  const orderedHandler = () => {
+    dispatchCartAction({
+      type: "ORDERED",
+    });
+  };
+
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
     addItem: addItemHandler,
     removeItem: removeItemHandler,
+    orderedItems: orderedHandler,
   };
 
   return (

@@ -19,6 +19,10 @@ const Cart = (props) => {
     cartContext.addItem({ ...item, amount: 1 });
   };
 
+  const orderedHandler = () => {
+    cartContext.orderedItems();
+  };
+
   const cartItems = (
     <ul className={styles["cart-items"]}>
       {cartContext.items.map((item) => (
@@ -46,7 +50,7 @@ const Cart = (props) => {
           Закрыть
         </button>
         {hasItems && (
-          <button onClick={() => {}} className={styles.button}>
+          <button onClick={orderedHandler} className={styles.button}>
             Заказать
           </button>
         )}
