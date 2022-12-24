@@ -1,4 +1,4 @@
-# Приложение суши бара на React.
+# Приложение суши бара.
 
 ## Ссылка
 
@@ -12,6 +12,14 @@ https://petr-rikhter.github.io/react-sushi-shop/
 
 ![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/105044705/203848171-e3553394-d2a1-42e5-8bd5-c2997dcd113f.gif)
 
+## Стек
+
+- React
+- JavaScript
+- Html
+- CSS
+- Адаптивная верстка
+
 ## Функционал
 
 - Добавление блюда в необходимом количестве
@@ -20,14 +28,6 @@ https://petr-rikhter.github.io/react-sushi-shop/
 - Удаление блюда из корзины при достижении 0 штук
 - Анимация списка блюд при загрузке страницы
 - Анимация корзины при добавлении блюда 
-
-## Стек
-
-- React
-- JavaScript
-- Html
-- CSS
-- Адаптивная верстка
 
 ## Установка
 
